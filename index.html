@@ -14,7 +14,70 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1573858c33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Condensed:wght@100&family=Black+And+White+Picture&family=Courgette&family=Dancing+Script&family=Festive&family=Fruktur&family=Indie+Flower&family=Irish+Grover&family=Italianno&family=Lobster&family=Open+Sans+Condensed:wght@300&family=Pacifico&family=Permanent+Marker&family=Qahiri&family=Quicksand:wght@300;400&family=Tangerine&family=Zen+Antique+Soft&display=swap');
+
+        img {
+            width: 100%;
+            height: 1000px;
+        }
+
+        #input {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-30%, -50%);
+        }
+
+        .btn {
+            border: 1px solid rgb(23, 233, 23);
+            color: white;
+            background-color: rgb(36, 228, 36);
+            border-radius: 10px;
+            letter-spacing: 2px;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: rgb(34, 228, 34);
+            border-color: rgb(28, 218, 28);
+
+        }
+
+        #reslt {
+            position: absolute;
+            display: flex;
+            height: 100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width:991px) {
+            #reslt {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)
+            }
+        }
+
+        @media (max-width:420px) {
+            .btn {
+                position: relative;
+                top: 70%;
+                right: 10%;
+            }
+
+        }
+
+        @media (max-width:322px) {
+            #input {
+                right: 10%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -56,15 +119,15 @@
             <div class="carousel-item" data-bs-interval="500">
                 <img src="./images/pexels-nataliya-vaitkevich-7236026.jpg" class="d-block w-100" alt="...">
             </div>
-            
+
             <div class="input-group flex-nowrap" id="input">
                 <span class="input-group-text" id="addon-wrapping"><i class="fas fa-globe-americas"></i></span>
                 <input type="text" class="w-50" placeholder="Enter Counter Name" aria-label="Username"
-                aria-describedby="addon-wrapping" id="cntry_name">
+                    aria-describedby="addon-wrapping" id="cntry_name">
                 <button class="btn" onclick="getData()">Search</button>
 
             </div>
-            
+
         </div>
         <div class="row">
             <div class="col-lg-3" id="reslt">
@@ -77,11 +140,11 @@
 
             </div>
             <div class="col-lg-3">
-                
+
             </div>
 
         </div>
-        
+
 
 
 </body>
